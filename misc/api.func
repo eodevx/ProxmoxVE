@@ -1,6 +1,6 @@
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: michelroegl-brunner
-# License: MIT | https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/eodevx/ProxmoxVE/main/LICENSE
 
 post_to_api() {
 
@@ -46,10 +46,10 @@ EOF
 
 post_to_api_vm() {
 
-  if [[ ! -f /usr/local/community-scripts/diagnostics ]]; then
+  if [[ ! -f /usr/local/eodevx/diagnostics ]]; then
     return
   fi
-  DIAGNOSTICS=$(grep -i "^DIAGNOSTICS=" /usr/local/community-scripts/diagnostics | awk -F'=' '{print $2}')
+  DIAGNOSTICS=$(grep -i "^DIAGNOSTICS=" /usr/local/eodevx/diagnostics | awk -F'=' '{print $2}')
   if ! command -v curl &> /dev/null; then
     return
   fi

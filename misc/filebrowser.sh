@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: tteck (tteckster) | Co-Author: MickLesk
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/eodevx/ProxmoxVE/raw/main/LICENSE
 
 function header_info {
     clear
@@ -26,7 +26,7 @@ INFO="${BL}ℹ️${CL}"
 APP="FileBrowser"
 INSTALL_PATH="/usr/local/bin/filebrowser"
 SERVICE_PATH="/etc/systemd/system/filebrowser.service"
-DB_PATH="/usr/local/community-scripts/filebrowser.db"
+DB_PATH="/usr/local/eodevx/filebrowser.db"
 IP=$(hostname -I | awk '{print $1}')
 DEFAULT_PORT=8080
 
